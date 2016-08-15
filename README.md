@@ -2,6 +2,8 @@
 
 Helps you a little bit when registering courses @ CityU
 
+![screenshot](https://raw.githubusercontent.com/lhc70000/AutoCRN_Chrome/images/screenshot.png)
+
 # Introduction
 
 This is a chrome extension which provides the following features:
