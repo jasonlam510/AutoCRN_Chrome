@@ -71,6 +71,8 @@ $(() => {
     form.append(new_field);
   }
 
+  $('.ac-btn-master').on('click', () => { window.open('https://banweb.cityu.edu.hk/pls/PROD/hwscrssh_cityu.P_SelTerm'); });
+
   $('.ac-btn-add').on('click', () => { append_crn_field(); });
 
   $('.ac-btn-save').on('click', () => {
