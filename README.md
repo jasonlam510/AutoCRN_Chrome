@@ -17,6 +17,7 @@ This is a chrome extension which provides the following features:
 
 - Audo add to waitlist
 - Disable the extension if ES6 support is not detected
+- Add a link to master schedule
 - Check for update
 
 # Remarks
