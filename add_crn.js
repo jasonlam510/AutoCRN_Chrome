@@ -35,6 +35,10 @@
   let read_crns = () => {
     chrome.storage.local.get('crn_list', (object) => {
       crn_list = object.crn_list;
+      if (!crn_list) {
+        console.log('AutoCRN: Cannot read storage. Please consider opening the popup window at least once.');
+        return;
+      }
       if(document.readyState === "complete") {
         fill_form();
       } else {
@@ -48,6 +52,10 @@
   let read_settings = () => {
     chrome.storage.local.get('crn_settings', (object) => {
       settings = object.crn_settings;
+      if (!settings) {
+        console.log('AutoCRN: Cannot read settings. Please consider opening the popup window at least once.');
+        return;
+      }
       if (settings.avoid_session_invalid) {
         // refresh in 5 min
         window.setTimeout(() => {
@@ -73,8 +81,15 @@
 
   read_settings();
 
-  if (!window.sessionStorage.getItem('autocrn_submitted')) {
-    read_crns();
+  if (window.location.pathname != '/pls/PROD/bwskfreg.P_AltPin') {
+    // switched to another page
+    window.sessionStorage.setItem('autocrn_submitted', false);
+  } else {
+    let submitted = window.sessionStorage.getItem('autocrn_submitted')
+    if (!submitted || submitted === 'false') {
+      // in reg page and not submitted
+      read_crns();
+    }
   }
 
   chrome.storage.onChanged.addListener((changes, namespace) => {

@@ -93,7 +93,7 @@ $(() => {
     }
   });
 
-  let save_settings = () => {
+  let save_settings = (reload = true) => {
     chrome.storage.local.set({
       crn_settings: {
         avoid_session_invalid: $('#ac-settings-session').prop('checked'),
@@ -104,14 +104,18 @@ $(() => {
         }
       }
     }, () => {
-      message_div.text('Settings saved.').css('color', 'green');
-      send_to_page({type: 'ac_reload'})
+      if (reload) {
+        message_div.text('Settings saved.').css('color', 'green');
+        send_to_page({type: 'ac_reload'})
+      }
     });
   }
 
   $('#ac-settings-session').on('change', () => {
     save_settings();
   });
+
+  save_settings(false);
 
   $('#ac-settings-refresh').on('change', () => {
     if ($('#ac-settings-refresh').prop('checked')) {

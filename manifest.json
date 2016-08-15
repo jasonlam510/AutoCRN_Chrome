@@ -3,7 +3,7 @@
 
   "name": "AutoCRN",
   "description": "Helps you a little bit when registering courses @ CityU",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "browser_action": {
     "default_icon": "icon.png",
