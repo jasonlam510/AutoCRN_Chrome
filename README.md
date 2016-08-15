@@ -13,11 +13,13 @@ This is a chrome extension which provides the following features:
 - Auto refresh at an exact time
 - Retry when page load time > 5s (not sure whether it works)
 
-# Todo
+# Todo, or may never do
 
 - Audo add to waitlist
+- Disable the extension if ES6 support is not detected
+- Check for update
 
 # Remarks
 
 - **Please read and understand the regulations and restrictions of ARRO**, and consider whether it's appropriate before you actually use it.
-- The developer is not responsible for any possible consequence.
+- The project is experimental and unstable. The developer is not responsible for any possible consequence.
