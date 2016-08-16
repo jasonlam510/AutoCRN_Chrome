@@ -2,7 +2,7 @@
 
 Helps you a little bit when registering courses @ CityU
 
-![screenshot](https://raw.githubusercontent.com/lhc70000/AutoCRN_Chrome/images/screenshot.png)
+[https://chrome.google.com/webstore/detail/autocrn/fnamipcehfmjomamkpgibdidlnlaobgf](https://chrome.google.com/webstore/detail/autocrn/fnamipcehfmjomamkpgibdidlnlaobgf)
 
 # Introduction
 
@@ -17,8 +17,9 @@ This is a chrome extension which provides the following features:
 
 - Audo add to waitlist
 - Disable the extension if ES6 support is not detected
-- Add a link to master schedule
+- ~~Add a link to master schedule~~
 - Check for update
+- Add enable/disable option
 
 # Remarks
 
