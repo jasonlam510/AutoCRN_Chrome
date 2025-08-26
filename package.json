@@ -1,0 +1,28 @@
+{
+  "name": "autocrn-chrome-extension",
+  "version": "1.0.2",
+  "description": "Chrome extension to help with CityU course registration",
+  "main": "popup.html",
+  "scripts": {
+    "build": "echo 'No build process required for Chrome extension'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "cityu",
+    "course-registration",
+    "autocrn"
+  ],
+  "author": "AutoCRN Team",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/AutoCRN_Chrome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/AutoCRN_Chrome/issues"
+  },
+  "homepage": "https://github.com/yourusername/AutoCRN_Chrome#readme"
+}
